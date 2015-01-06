@@ -34,7 +34,11 @@
     if (this.options.cancel && this.shouldCancel(e.target))
       return;
 
-    var transform = window.getComputedStyle(this.el).transform;
+    var style = window.getComputedStyle(this.el);
+    var transform = style.transform ||
+                    style.webkitTransform ||
+                    style.mozTransform ||
+                    style.msTransform;
     var coords = transform && transform.match(/-*\d+/g);
     this.origX = coords ? parseInt(coords[4], 10) : 0;
     this.origY = coords ? parseInt(coords[5], 10) : 0;
