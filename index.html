@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery DragMe</title>
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+    }
+    body {
+      position: relative;
+      font-family: Raleway, sans-serif;
+      font-weight: 600;
+      text-align: center;
+    }
+    a,
+    a:visited {
+      color: #0277bd;
+    }
+    .draggable {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      margin: auto; /* center that thing! */
+      height: 220px;
+      width: 220px;
+      cursor: move;
+      border-radius: 50%;
+      background-color: #ff3D00;
+      color: #fff;
+      box-shadow: 0 0 6px rgba(0,0,0,.16), 
+                  0 6px 12px rgba(0,0,0,.32);
+    }
+    .headline {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      margin: auto; /* center that thing! */
+      height: 1.1em;
+      text-align: center;
+      font-size: 2em;
+      line-height: 1em;
+      font-weight: 600;
+      position: absolute;
+    }
+    .header {
+      position: absolute;
+      top: 1em;
+      right: 0; left: 0;
+      margin: auto;
+    }
+    .footer {
+      position: absolute;
+      bottom: 1em;
+      right: 0; left: 0;
+      margin: auto;
+    }
+  </style>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div class="header">
+    <p>
+      Hi, I'm jQuery DragMe,
+    </p>
+    <p>
+      I'm a super light weight (1KB) draggable plugin that uses CSS3 Transforms
+    </p>
+  </div>
+
+  <div id="js-draggable" class="draggable">
+    <h1 class="headline">
+      Drag me!
+    </h1>
+  </div>
+
+  <div class="footer">
+    <p>
+      <a href="https://github.com/bufferapp/jquery-dragme">Fork me on Github</a>
+    </p>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="jquery.dragme.js"></script>
+  <script>
+    $('#js-draggable').dragMe();
+  </script>
+
+</body>
+</html>
