@@ -18,6 +18,10 @@
     a,
     a:visited {
       color: #0277bd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     .draggable {
       position: absolute;
@@ -55,6 +59,21 @@
       right: 0; left: 0;
       margin: auto;
     }
+    .ir {
+      border: 0;
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+    }
+    .buffer-icon {
+      display: inline-block;
+      width: 75px;
+      height: 18px;
+      margin: 0 3px;
+      vertical-align: middle;
+      background: url(https://d389zggrogs7qo.cloudfront.net/images/app/buffer-logo@2x.png) no-repeat top left;
+      background-size: 75px 15px;
+    }
   </style>
   <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
 </head>
@@ -67,6 +86,7 @@
     <p>
       I'm a super light weight (1KB) draggable plugin that uses CSS3 Transforms
     </p>
+    <a href="https://github.com/bufferapp/jquery-dragme">Download or Fork me on Github</a>
   </div>
 
   <div id="js-draggable" class="draggable">
@@ -77,7 +97,7 @@
 
   <div class="footer">
     <p>
-      <a href="https://github.com/bufferapp/jquery-dragme">Fork me on Github</a>
+      Made with love by <a href="https://bufferapp.com" class="buffer-icon ir">Buffer</a>
     </p>
   </div>
 
