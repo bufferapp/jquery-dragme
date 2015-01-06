@@ -6,6 +6,8 @@ The goal of this plugin is not to be a drop in replacement for jQuery UI's
 draggable, but a minimal plugin to make certain elements draggable on a page, 
 i.e. modal windows.
 
+[Live demo](http://bufferapp.github.io/jquery-dragme/)
+
 ## Usage
 
 ```javascript
