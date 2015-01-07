@@ -1,8 +1,8 @@
 /*!
- * jQuery DragMe - v 0.1 - 12/03/2014
+ * jQuery DragMe - v 0.2 - 01/06/2015
  * Made by Buffer! https://bufferapp.com
  * 
- * Copyright (c) 2014 Buffer, Inc. MIT licensed.
+ * Copyright (c) 2015 Buffer, Inc. MIT licensed.
  */
 
 ;(function($, window, undefined) {
